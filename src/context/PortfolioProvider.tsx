@@ -7,7 +7,7 @@ import { PortfolioReducer } from './PortfolioReducer'
 
 /* Portfolio Initial State */
 const InitalState: PortfolioGlobalState = {
-    DarkMode: true,
+    DarkMode: false,
     Language: 'Es'
 }
 
@@ -15,18 +15,10 @@ export const PortfolioProvider = ({ children }: PortfProvPropsI) => {
 
     const [PortfolioState, dispatch] = useReducer(PortfolioReducer, InitalState);
     /* Switch Dark Mode */
-    const DMOn = () => { /* On */
-        if (!PortfolioState.DarkMode) dispatch({ type: 'DARK_MODE_ON' })
-    }
-    const DMOff = () => { /* Off */
-        if (PortfolioState.DarkMode) dispatch({ type: 'DARK_MODE_OFF' })
-    }
-    const LanEs = () => {
-        if (PortfolioState.Language === 'En') dispatch({ type: 'SWITCH_LANGUAGE_ES', payload: 'Es' })
-    }
-    const LanEn = () => {
-        if (PortfolioState.Language === 'Es') dispatch({ type: 'SWITCH_LANGUAGE_EN', payload: 'En' })
-    }
+    const DMOn = () => { if (!PortfolioState.DarkMode) dispatch({ type: 'DARK_MODE_ON' }) } // Dark Mode on
+    const DMOff = () => { if (PortfolioState.DarkMode) dispatch({ type: 'DARK_MODE_OFF' }) } // Dark mode off
+    const LanEs = () => { if (PortfolioState.Language === 'En') dispatch({ type: 'SWITCH_LANGUAGE_ES', payload: 'Es' }) } // Language Espanish
+    const LanEn = () => { if (PortfolioState.Language === 'Es') dispatch({ type: 'SWITCH_LANGUAGE_EN', payload: 'En' }) } // Language English
 
     return (
         <PortfolioContext.Provider value={

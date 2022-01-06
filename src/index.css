@@ -8,7 +8,7 @@
   box-sizing: border-box;
 }
 .networks{
-  color: darkgrey;
+  color: rgb(128, 128, 128);
 }
 .networks:hover{
   transform: translate(0, -2px);
@@ -26,11 +26,16 @@
 .gh:hover{
   color: #fff;
 }
+.ghl:hover{
+  color: #000;
+}
 a{
   text-decoration: none;
   color: black;
 }
 body {
+  width: 100%;
+  position: relative;
   font-family: -apple-system, BlinkMacSystemFont, 'Noto Sans', 'Poppins', 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
