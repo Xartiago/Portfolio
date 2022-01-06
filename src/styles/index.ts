@@ -2,7 +2,7 @@ import styled, { keyframes } from "styled-components";
 /* Interfaces & Types */
 import { StysI } from '../interfaces/interfaces'
 /* Colors */
-import { AzulOscuro, Blanco, Celeste, Gris, Lila, Negro } from './colors'
+import { AzulOscuro, Blanco, Celeste, Gris, GrisOscuro, Lila, Negro } from './colors'
 /* Animations */
 const ScrollDown = keyframes`
     0% {    transform: translate(0, 0);  }
@@ -25,7 +25,7 @@ export const Down = styled.span`
 /* Titles, Subtitles & Paragraphs */
 export const First = styled.h1`
     z-index: 10;
-    font-size: 24px;
+    font-size: 28px;
     text-align: center;
     color: ${(props: StysI) => props.DM ? Blanco : Negro};
     @media (min-width: 768px) {
@@ -37,10 +37,14 @@ export const First = styled.h1`
 `
 export const Second = styled.h2`
     z-index: 10;
-    font-size: 22px;
+    margin-left: 10px;
+    font-size: 25px;
     color: ${(props: StysI) => props.DM ? Blanco : Negro};
     @media (min-width: 768px) {
-        font-size: 26px;
+        font-size: 30px;
+    }
+    @media (min-width: 1180px) {
+        font-size: 35px;
     }
 `
 export const Subtitle1 = styled.h3`
@@ -71,17 +75,42 @@ export const SubItalicT = styled.h3`
         font-size: 23px;
     }
 `
-export const Text = styled.p`
-
+export const Paragraph = styled.p`
+    padding: 50px 20px;
+    font-size: 16px;
+    text-align: center;
+    color: ${(props: StysI) => props.DM ? Blanco : Negro};
+    @media (min-width: 768px) {
+        font-size: 14px;
+    }
+    @media (min-width: 1180px) {
+        font-size: 12px;
+    }
 `
 /* Main Container */
 export const Container = styled.div`
+    z-index: -2;
     position: relative;
     margin: 0;
     padding: 0;
     width: 100%;
     height: 100%;
     background: ${(props: StysI) => props.DM ? Negro : Blanco};
+`
+/* Other Container */
+export const Container2 = styled.div`
+    z-index: -2;
+    position: relative;
+    padding: 50px 20px;
+    width: 100%;
+    height: 100%;
+    background: ${(props: StysI) => props.DM ? Negro : Blanco};
+    @media (min-width: 768px) {
+        padding: 0 60px 0 120px;
+    }
+    @media (min-width: 1180px) {
+        font-size: 23px;
+    }
 `
 /* --ABSOLUTE CONTROLLERS -- */
 /* Container */
@@ -110,4 +139,8 @@ export const LangControl = styled.h3`
     @media (min-width: 768px) {
         font-size: 20px;
     }
+`
+/* Title Layer */
+export const MiniTitles = styled.div`
+    position: relative;
 `

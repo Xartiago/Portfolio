@@ -9,7 +9,7 @@ import { AiFillYoutube, AiFillInstagram, AiFillLinkedin, AiFillGithub } from "re
 
 
 
-export const Home = () => {
+export const NewHome = () => {
     const { DarkMode } = useDarkMode()
     return (
         <Container DM={DarkMode} id='Home'>
