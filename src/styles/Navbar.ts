@@ -1,13 +1,18 @@
 import styled from "styled-components";
-import { MenStI, StysI } from "../interfaces/interfaces";
+import { MeDMI, MenStI, StysI } from "../interfaces/interfaces";
 import { Blanco, Negro } from "./colors";
 
 export const NavContainer = styled.div`
     position: fixed;
     z-index: 10;
+    height: ${(props: MeDMI) => props.Menu ? '100vh' : 'auto'};
     top: 0px;
-    left: 10px;
-    background: ${(props: StysI) => props.DM ? Negro : Blanco};
+    padding-left: 10px;
+    background: ${(props: MeDMI) => props.DM ? Negro : Blanco};
+    border-right: ${(props: MeDMI) => props.DM && props.Menu ? `1px solid ${Blanco}` 
+    : props.DM === false && props.Menu ? `1px solid ${Negro}`
+    : 'none'
+    };
     @media(min-width: 768px){   
         position: sticky;
         z-index: 10;
@@ -22,7 +27,7 @@ export const Controller = styled.div`
 `
 export const MenuContainer = styled.div`
     display: ${(props: MenStI) => props.Menu ? 'flex' : 'none'};
-    margin: ${(props: MenStI) => props.Menu ? '60px 0' : 0};
+    margin: ${(props: MenStI) => props.Menu ? '60px 15px 0 0' : '0'};
     flex-direction: column;
     @media (min-width: 768px) {
         height: 100vh;
@@ -31,6 +36,16 @@ export const MenuContainer = styled.div`
         flex-direction: column;
         justify-content: center;
         alignt-items: center;
-        padding: 10px; 
+        padding: 10px 10px 10px 20px;
     }
+`
+export const MenuControllersContainer = styled.div`
+    display: flex;
+    padding: 10px 0;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 19px;
+    border: 1px solid ${(props: StysI) => props.DM ? Blanco : Negro};
 `

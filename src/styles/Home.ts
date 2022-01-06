@@ -3,6 +3,7 @@ import styled, { keyframes } from "styled-components"
 import whiteMark from '../assets/icons/whiteMark.svg';
 import blackMark from '../assets/icons/blackMark.svg';
 import { StysI } from "../interfaces/interfaces";
+import { Blanco, Negro } from "./colors";
 
 /* -- HOME -- */
 /* Personal Brand */
@@ -17,7 +18,8 @@ export const Mark = styled.div`
     background-image: url('${(props: StysI) => props.DM ? whiteMark : blackMark}');
     backgroung-repeat: no-repeat;
     animation: ${rotate} infinite 4s cubic-bezier(.66,.01,.3,1);
-    @media (min-width: 768px) {
+/*     filter: drop-shadow(0 0 0.1rem ${(props: StysI) => props.DM ? Blanco : Negro});
+ */    @media (min-width: 768px) {
         width: 90px;
         height: 123px;
     }

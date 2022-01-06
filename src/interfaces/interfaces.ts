@@ -12,6 +12,11 @@ export interface StysI {
 export interface MenStI{
     Menu?: Boolean;
 }
+/* Dark Mode and Menu */
+export interface MeDMI {
+    DM: Boolean;
+    Menu: Boolean
+}
 /* -- State -- */
 /* Global Portfolio State */
 export interface PortfolioGlobalState {

@@ -24,6 +24,7 @@ export const Down = styled.span`
 `
 /* Titles, Subtitles & Paragraphs */
 export const First = styled.h1`
+    z-index: 10;
     font-size: 24px;
     text-align: center;
     color: ${(props: StysI) => props.DM ? Blanco : Negro};
@@ -35,6 +36,7 @@ export const First = styled.h1`
     }
 `
 export const Second = styled.h2`
+    z-index: 10;
     font-size: 22px;
     color: ${(props: StysI) => props.DM ? Blanco : Negro};
     @media (min-width: 768px) {
@@ -42,6 +44,7 @@ export const Second = styled.h2`
     }
 `
 export const Subtitle1 = styled.h3`
+    z-index: 10;
     font-size: 20px;
     font-weight: 500;
     text-align: center;
@@ -54,6 +57,7 @@ export const Subtitle1 = styled.h3`
     }
 `
 export const SubItalicT = styled.h3`
+    z-index: 10;
     margin: 5px 0 10px;
     font-size: 16px;
     font-weight: 500;
@@ -98,8 +102,8 @@ export const DarkModeController = styled.div`
     }
 `
 export const LangControl = styled.h3`
-    margin-top: 5px;
-    font-size: 20px;
+    margin-top: 10px;
+    font-size: 15px;
     text-align: center;
     cursor: pointer;
     color: ${(props: StysI) => props.DM ? Blanco : Negro};
