@@ -24,6 +24,21 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
   monospace;
 }
+@keyframes color{
+  43%{
+    color: #00ADB5;
+  }
+  100%{
+    color: #0a748f;
+  }
+}
+.menuicons{
+  padding: 5px;
+  margin: 10px 0;
+}
+.menuicons:hover{
+  animation: color 1 1.3s forwards;
+}
 .controler{
   cursor: pointer;
 }

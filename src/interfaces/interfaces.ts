@@ -3,9 +3,14 @@
 export interface PortfProvPropsI {
     children: JSX.Element | JSX.Element[];
 }
-/* Syled components props */
+/* -- Syled components props -- */
+/* Dark mode */
 export interface StysI {
     DM: Boolean;
+}
+/* Menu */
+export interface MenStI{
+    Menu?: Boolean;
 }
 /* -- State -- */
 /* Global Portfolio State */

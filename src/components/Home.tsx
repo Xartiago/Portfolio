@@ -1,7 +1,8 @@
 /* Custom Hook */
 import { useDarkMode } from '../hooks/useDarkMode';
 /* Styled Components */
-import { Container, Down, First, HomeBackground, Mark, Networks, SubItalicT, Subtitle1 } from '../styles';
+import {Container, Down, First, SubItalicT, Subtitle1} from '../styles'
+import { HomeBackground, Mark, Networks } from '../styles/Home';
 /* React Icons */
 import { BsChevronDoubleDown } from 'react-icons/bs';
 import { AiFillYoutube, AiFillInstagram, AiFillLinkedin, AiFillGithub } from "react-icons/ai";

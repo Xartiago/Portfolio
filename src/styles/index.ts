@@ -1,31 +1,13 @@
 import styled, { keyframes } from "styled-components";
-/* Mark */
-import whiteMark from '../assets/icons/whiteMark.svg';
-import blackMark from '../assets/icons/blackMark.svg';
 /* Interfaces & Types */
 import { StysI } from '../interfaces/interfaces'
 /* Colors */
 import { AzulOscuro, Blanco, Celeste, Gris, Lila, Negro } from './colors'
 /* Animations */
-const rotate = keyframes`
-  0% {
-    transform: rotate(0deg);
-  }
-
-  100% {
-    transform: rotate(179.9deg);
-  }
-`;
 const ScrollDown = keyframes`
-    0% {
-    transform: translate(0, 0);
-  }
-  50% {
-    transform: translate(0, 30%);
-  }
-  100% {
-    transform: translate(0, 0%);
-  
+    0% {    transform: translate(0, 0);  }
+    50% {    transform: translate(0, 30%);  }
+    100% {    transform: translate(0, 0%);  
 `
 /* React Icons styles */
 export const Down = styled.span`
@@ -40,13 +22,23 @@ export const Down = styled.span`
         margin: 0 0 25px;
     }
 `
-/* Titles and Subtitles */
+/* Titles, Subtitles & Paragraphs */
 export const First = styled.h1`
     font-size: 24px;
     text-align: center;
     color: ${(props: StysI) => props.DM ? Blanco : Negro};
     @media (min-width: 768px) {
         font-size: 30px;
+    }
+    @media (min-width: 1180px) {
+        font-size: 35px;
+    }
+`
+export const Second = styled.h2`
+    font-size: 22px;
+    color: ${(props: StysI) => props.DM ? Blanco : Negro};
+    @media (min-width: 768px) {
+        font-size: 26px;
     }
 `
 export const Subtitle1 = styled.h3`
@@ -56,6 +48,9 @@ export const Subtitle1 = styled.h3`
     color: ${(props: StysI) => props.DM ? Blanco : Negro};
     @media (min-width: 768px) {
         font-size: 24px;
+    }
+    @media (min-width: 1180px) {
+        font-size: 29px;
     }
 `
 export const SubItalicT = styled.h3`
@@ -68,9 +63,16 @@ export const SubItalicT = styled.h3`
     @media (min-width: 768px) {
         font-size: 20px;
     }
+    @media (min-width: 1180px) {
+        font-size: 23px;
+    }
+`
+export const Text = styled.p`
+
 `
 /* Main Container */
 export const Container = styled.div`
+    position: relative;
     margin: 0;
     padding: 0;
     width: 100%;
@@ -104,41 +106,4 @@ export const LangControl = styled.h3`
     @media (min-width: 768px) {
         font-size: 20px;
     }
-`
-/* -- HOME -- */
-/* Personal Brand */
-export const Mark = styled.div`
-    margin: 0 0 20px;
-    width: 65px;
-    height: 89px;
-    background-image: url('${(props: StysI) => props.DM ? whiteMark : blackMark}');
-    backgroung-repeat: no-repeat;
-    animation: ${rotate} infinite 4s cubic-bezier(.66,.01,.3,1);
-    @media (min-width: 768px) {
-        width: 90px;
-        height: 123px;
-    }
-`
-export const HomeBackground = styled.div`
-    z-index: 1;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100vh;
-`
-export const Networks = styled.div`
-  margin: 10px;
-  width: 170px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-`
-/* About */
-/* About flex components */
-export const ProfileCont = styled.div`
-    display: flex;
-    height: 190px;
 `
