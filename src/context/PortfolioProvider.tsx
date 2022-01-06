@@ -7,7 +7,7 @@ import { PortfolioReducer } from './PortfolioReducer'
 
 /* Portfolio Initial State */
 const InitalState: PortfolioGlobalState = {
-    DarkMode: false,
+    DarkMode: true,
     Language: 'Es'
 }
 

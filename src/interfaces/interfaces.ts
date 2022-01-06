@@ -3,6 +3,10 @@
 export interface PortfProvPropsI {
     children: JSX.Element | JSX.Element[];
 }
+/* Syled components props */
+export interface StysI {
+    DM: Boolean;
+}
 /* -- State -- */
 /* Global Portfolio State */
 export interface PortfolioGlobalState {

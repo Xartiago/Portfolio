@@ -8,6 +8,7 @@ export const App = () => {
     <PortfolioProvider>
       <AbsoluteControllers />
       <Home />
+      <About />
     </PortfolioProvider>
   )
 }

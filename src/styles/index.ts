@@ -1,18 +1,12 @@
 import styled, { keyframes } from "styled-components";
+/* Mark */
 import whiteMark from '../assets/icons/whiteMark.svg';
 import blackMark from '../assets/icons/blackMark.svg';
-
+/* Interfaces & Types */
+import { StysI } from '../interfaces/interfaces'
 /* Colors */
-const Celeste = '#69bdc4';
-const Lila = '#00ADB5';
-const AzulOscuro = '#061d23';
-const Gris = '#737a7b';
-const Blanco = '#EEEEEE';
-const Negro = '#222831'
-
-interface StysI {
-    DM: Boolean;
-}
+import { AzulOscuro, Blanco, Celeste, Gris, Lila, Negro } from './colors'
+/* Animations */
 const rotate = keyframes`
   0% {
     transform: rotate(0deg);
@@ -22,13 +16,30 @@ const rotate = keyframes`
     transform: rotate(179.9deg);
   }
 `;
+const ScrollDown = keyframes`
+    0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(0, 30%);
+  }
+  100% {
+    transform: translate(0, 0%);
+  
+`
 /* React Icons styles */
 export const Down = styled.span`
     margin: 0 0 10px;
     position: absolute;
     bottom: 0;
+    animation: ${ScrollDown} infinite 2s cubic-bezier(.58,.58,.69,1.06);
+    @media (min-width: 768px) {
+        margin: 0 0 20px;
+    }
+    @media (min-width: 1180px) {
+        margin: 0 0 25px;
+    }
 `
-
 /* Titles and Subtitles */
 export const First = styled.h1`
     font-size: 24px;
@@ -58,10 +69,41 @@ export const SubItalicT = styled.h3`
         font-size: 20px;
     }
 `
+/* Main Container */
+export const Container = styled.div`
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background: ${(props: StysI) => props.DM ? Negro : Blanco};
+`
 /* --ABSOLUTE CONTROLLERS -- */
 /* Container */
 export const AbsCont = styled.div`
-    position: fixed;
+    z-index: 10;
+    position: sticky;
+    top: 20px;
+`
+export const DarkModeController = styled.div`
+    display: none;
+    @media (min-width: 768px) {
+        position: absolute;
+        margin: 0 10px;
+        display: flex;
+        flex-direction: column;
+        right: 0;
+        margin: 0 20px;
+    }
+`
+export const LangControl = styled.h3`
+    margin-top: 5px;
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+    color: ${(props: StysI) => props.DM ? Blanco : Negro};
+    @media (min-width: 768px) {
+        font-size: 20px;
+    }
 `
 /* -- HOME -- */
 /* Personal Brand */
@@ -78,7 +120,7 @@ export const Mark = styled.div`
     }
 `
 export const HomeBackground = styled.div`
-    <-index: 10;
+    z-index: 1;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -86,11 +128,10 @@ export const HomeBackground = styled.div`
     align-items: center;
     width: 100%;
     height: 100vh;
-    background: ${(props: StysI) => props.DM ? Negro : Blanco};
 `
 export const Networks = styled.div`
   margin: 10px;
-  width: 150px;
+  width: 170px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -100,5 +141,4 @@ export const Networks = styled.div`
 export const ProfileCont = styled.div`
     display: flex;
     height: 190px;
-    margin: 10px;
 `
