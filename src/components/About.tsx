@@ -2,6 +2,8 @@ import { useDarkMode } from "../hooks/useDarkMode"
 import { useLanguage } from "../hooks/useLanguage"
 import { Container2, MiniTitles, Paragraph, Second } from "../styles"
 import { Dots, DownloadButton, Profile, ProfileCont, TextContainer } from "../styles/About"
+import CV from '../assets/CV.pdf'
+import CVE from '../assets/CVE.pdf'
 
 export const About = () => {
     const { DarkMode } = useDarkMode()
@@ -22,7 +24,6 @@ export const About = () => {
                             : 'Mi nombre es Santiago Salcedo Camacho, soy un joven de Yopal/Casanare (Colombia) apasionado por la tecnologia y sus diversos campos, actualmente en el cual me desempeño mejor es desarrollando software para webs; constantemente me encuentro aprendiendo nuevas tecnologias/librerias y explorando informacion relacionada con este, de la misma forma me agrada enseñar lo que se, y colaborar en el desarrollo de proyectos en equipo!'
                         }
                     </Paragraph>
-                    <DownloadButton DM={DarkMode}>{Language === 'En' ? 'Download CV' : 'Descargar CV'}</DownloadButton>
                 </TextContainer>
             </ProfileCont>
         </Container2>

@@ -35,7 +35,6 @@ export const Home = () => {
                 <Down>
                     <a href="www.google.com" target='_blank' > {DarkMode ? <BsChevronDoubleDown color='white' /> : <BsChevronDoubleDown />} </a>
                 </Down>
-                <a href="www.google.com" target='_blank'>HOLA</a>
             </HomeBackground>
         </Container>
     )

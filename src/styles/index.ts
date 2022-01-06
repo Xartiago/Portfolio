@@ -89,7 +89,6 @@ export const Paragraph = styled.p`
 `
 /* Main Container */
 export const Container = styled.div`
-    z-index: -2;
     position: relative;
     margin: 0;
     padding: 0;

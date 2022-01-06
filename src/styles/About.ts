@@ -17,16 +17,13 @@ export const Dots = styled.div`
     background-repeat: none;
 `
 export const Profile = styled.div`
-    width: 150px; height: 150px;
+    width: 150px; height: 130px;
     margin: 50px 0 30px;
     background-image: url(${Avatar});
     background-repeat: none;
-`
-export const DownloadButton = styled.a`
-    padding: 5px 20px;;
-    margin-bottom: 10px;
-    background-color: ${Gris};
-    border-radius: 13px;
+    @media(min-width: 700px){
+        width: 1250px; height: 160px;
+    }
 `
 export const TextContainer = styled.div`
     text-align: center;
@@ -39,4 +36,7 @@ export const ProfileCont = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    @media(min-width: 700px){
+        flex-direction: row
+    }
 `
