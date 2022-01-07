@@ -18,8 +18,11 @@ export const Mark = styled.div`
     background-image: url('${(props: StysI) => props.DM ? whiteMark : blackMark}');
     backgroung-repeat: no-repeat;
     animation: ${rotate} infinite 4s cubic-bezier(.66,.01,.3,1);
-/*     filter: drop-shadow(0 0 0.1rem ${(props: StysI) => props.DM ? Blanco : Negro});
- */    @media (min-width: 768px) {
+    &:hover{
+        filter: drop-shadow(0 0 0.1rem ${(props: StysI) => props.DM ? Blanco : Negro});
+        animation-duration: 2s;
+    }
+    @media (min-width: 768px) {
         width: 90px;
         height: 123px;
     }

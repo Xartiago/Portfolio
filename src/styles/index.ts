@@ -15,6 +15,10 @@ export const Down = styled.span`
     position: absolute;
     bottom: 0;
     animation: ${ScrollDown} infinite 2s cubic-bezier(.58,.58,.69,1.06);
+    &:hover{
+        filter: drop-shadow(0 0 0.1rem ${(props: StysI) => props.DM ? Blanco : Negro});
+        animation-duration: 0.5s;
+    }
     @media (min-width: 768px) {
         margin: 0 0 20px;
     }
@@ -80,11 +84,9 @@ export const Paragraph = styled.p`
     font-size: 16px;
     text-align: center;
     color: ${(props: StysI) => props.DM ? Blanco : Negro};
-    @media (min-width: 768px) {
-        font-size: 14px;
-    }
+
     @media (min-width: 1180px) {
-        font-size: 12px;
+        font-size: 18px;
     }
 `
 /* Main Container */
@@ -100,12 +102,12 @@ export const Container = styled.div`
 export const Container2 = styled.div`
     z-index: -2;
     position: relative;
-    padding: 50px 20px;
+    padding: 70px 18px;
     width: 100%;
     height: 100%;
     background: ${(props: StysI) => props.DM ? Negro : Blanco};
     @media (min-width: 768px) {
-        padding: 0 60px 0 120px;
+        padding: 40px 60px 40px 120px;
     }
     @media (min-width: 1180px) {
         font-size: 23px;

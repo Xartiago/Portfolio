@@ -33,7 +33,7 @@ export const Home = () => {
                     </a>
                 </Networks>
                 <Down>
-                    <a href="www.google.com" target='_blank' > {DarkMode ? <BsChevronDoubleDown color='white' /> : <BsChevronDoubleDown />} </a>
+                    <a href='#About' > {DarkMode ? <BsChevronDoubleDown color='white' /> : <BsChevronDoubleDown />} </a>
                 </Down>
             </HomeBackground>
         </Container>

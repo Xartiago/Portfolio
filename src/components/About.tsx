@@ -1,7 +1,7 @@
 import { useDarkMode } from "../hooks/useDarkMode"
 import { useLanguage } from "../hooks/useLanguage"
 import { Container2, MiniTitles, Paragraph, Second } from "../styles"
-import { Dots, DownloadButton, Profile, ProfileCont, TextContainer } from "../styles/About"
+import { BrandLogos, Dots, Logotype, Logotype2, PersBrand, Profile, ProfileCont, TextContainer } from "../styles/About"
 import CV from '../assets/CV.pdf'
 import CVE from '../assets/CVE.pdf'
 
@@ -26,6 +26,18 @@ export const About = () => {
                     </Paragraph>
                 </TextContainer>
             </ProfileCont>
+            <PersBrand DM={DarkMode}>
+                <BrandLogos>
+                    <Logotype DM={DarkMode} />
+                    <Logotype2 DM={DarkMode} />
+                </BrandLogos>
+                <Paragraph DM={DarkMode}>
+                    {Language === 'En' ?
+                        <b>My Personal Brand is an X in the shape of an hourglass</b>
+                        : <b>Mi Marca Personal es una X con forma de reloj de arena</b>
+                    }
+                </Paragraph>
+            </PersBrand>
         </Container2>
     )
 }
