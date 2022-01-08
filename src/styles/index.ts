@@ -80,7 +80,7 @@ export const SubItalicT = styled.h3`
     }
 `
 export const Paragraph = styled.p`
-    padding: 50px 20px;
+    padding: 20px 20px;
     font-size: 16px;
     text-align: center;
     color: ${(props: StysI) => props.DM ? Blanco : Negro};
@@ -103,6 +103,20 @@ export const Container2 = styled.div`
     z-index: -2;
     position: relative;
     padding: 70px 18px;
+    width: 100%;
+    height: 100%;
+    background: ${(props: StysI) => props.DM ? Negro : Blanco};
+    @media (min-width: 768px) {
+        padding: 40px 60px 40px 120px;
+    }
+    @media (min-width: 1180px) {
+        font-size: 23px;
+    }
+`
+export const Container3 = styled.div`
+    z-index: -2;
+    position: relative;
+    padding: 10px 18px;
     width: 100%;
     height: 100%;
     background: ${(props: StysI) => props.DM ? Negro : Blanco};

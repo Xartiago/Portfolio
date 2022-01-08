@@ -17,6 +17,14 @@ export interface MeDMI {
     DM: Boolean;
     Menu: Boolean
 }
+export interface TitlesI {
+    id: number;
+    titleEn: string;
+    titleES: string;
+    descriptionEn: string;
+    descriptionEs: string;
+    year: string;
+}
 /* -- State -- */
 /* Global Portfolio State */
 export interface PortfolioGlobalState {

@@ -76,7 +76,7 @@ export const ProfileCont = styled.div`
 `
 /* Personal Brand */
 export const PersBrand = styled.div`
-    margin: 30px 20px;
+    margin: 30px 20px 0;
     display: flex;
     flex-direction: column;
     border-top: 1px solid ${(props: StysI) => props.DM ? Blanco : GrisClaro};
@@ -97,20 +97,20 @@ export const BrandLogos = styled.div`
     display: flex;
 `
 export const Logotype = styled.div`
-    margin: 20px auto;
+    margin: 20px auto 0;
     width: 80px;
     height: 120px;
     background-image: url('${(props: StysI) => props.DM ? Mark : MarkN}');
     background-repeat: no-repeat;
     @media(min-width: 1080px){
-        margin: 20px 0px;
+        margin: 20px 40px;
         height: 200px;
         width: 120px;
     }
 `
 
 export const Logotype2 = styled.div`
-    margin: 20px auto;
+    margin: 20px auto 0;
     width: 80px;
     height: 120px;
     background-image: url('${(props: StysI) => props.DM ? whiteMark : blackMark}');

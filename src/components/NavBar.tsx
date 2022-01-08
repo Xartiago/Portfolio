@@ -57,9 +57,9 @@ export const NavBar = () => {
             <MenuContainer>
                 <a href="#Home" onClick={closeMenu}><IoHomeOutline size='38' color={DarkMode ? Blanco : Negro} className='menuicons'  /></a>
                 <a href="#About" onClick={closeMenu}><BsPerson size='48' color={DarkMode ? Blanco : Negro} className='menuicons' /></a>
-                <a href="#Experience" onClick={closeMenu}><IoIosList size='38' color={DarkMode ? Blanco : Negro} className='menuicons'  /></a>
-                <a href="#Technologies" onClick={closeMenu}><BiBrain size='45' color={DarkMode ? Blanco : Negro} className='menuicons'  /></a>
-                <a href="#Projects" onClick={closeMenu}><VscTools size='40' color={DarkMode ? Blanco : Negro} className='menuicons'  /></a>
+                <a href="#Experience" onClick={closeMenu}><BiBrain size='45' color={DarkMode ? Blanco : Negro} className='menuicons'  /></a>
+                <a href="#Technologies" onClick={closeMenu}><VscTools size='40' color={DarkMode ? Blanco : Negro} className='menuicons'  /></a>
+                <a href="#Projects" onClick={closeMenu}><IoIosList size='38' color={DarkMode ? Blanco : Negro} className='menuicons'  /></a>
                 <a href="#Hoobies" onClick={closeMenu}><MdOutlineGames size='40' color={DarkMode ? Blanco : Negro} className='menuicons'  /></a>
                 <a href="#Contact" onClick={closeMenu}><MdOutlineConnectWithoutContact size='40' color={DarkMode ? Blanco : Negro} className='menuicons'  /></a>
             </MenuContainer>

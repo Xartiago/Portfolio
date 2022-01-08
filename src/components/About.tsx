@@ -1,9 +1,9 @@
+/* Custom Hooks */
 import { useDarkMode } from "../hooks/useDarkMode"
 import { useLanguage } from "../hooks/useLanguage"
+/* Styled Components */
 import { Container2, MiniTitles, Paragraph, Second } from "../styles"
 import { BrandLogos, Dots, Logotype, Logotype2, PersBrand, Profile, ProfileCont, TextContainer } from "../styles/About"
-import CV from '../assets/CV.pdf'
-import CVE from '../assets/CVE.pdf'
 
 export const About = () => {
     const { DarkMode } = useDarkMode()
@@ -33,8 +33,8 @@ export const About = () => {
                 </BrandLogos>
                 <Paragraph DM={DarkMode}>
                     {Language === 'En' ?
-                        <b>My Personal Brand is an X in the shape of an hourglass</b>
-                        : <b>Mi Marca Personal es una X con forma de reloj de arena</b>
+                        <b>"My Personal Brand is an X in the shape of an hourglass"</b>
+                        : <b>"Mi Marca Personal es una X con forma de reloj de arena"</b>
                     }
                 </Paragraph>
             </PersBrand>

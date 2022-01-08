@@ -1,5 +1,6 @@
 import { About } from './components/About'
 import { AbsoluteControllers } from './components/AbsoluteControllers'
+import { ExpyStud } from './components/ExpyStud'
 import { Home } from './components/Home'
 import { NavBar } from './components/NavBar'
 import { PortfolioProvider } from './context/PortfolioProvider'
@@ -11,6 +12,7 @@ export const App = () => {
       <Home />
       <NavBar />
       <About />
+      <ExpyStud />
     </PortfolioProvider>
   )
 }
