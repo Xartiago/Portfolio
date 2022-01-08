@@ -116,7 +116,7 @@ export const Container2 = styled.div`
 export const Container3 = styled.div`
     z-index: -2;
     position: relative;
-    padding: 10px 18px;
+    padding: 40px 18px 0;
     width: 100%;
     height: 100%;
     background: ${(props: StysI) => props.DM ? Negro : Blanco};
@@ -158,4 +158,7 @@ export const LangControl = styled.h3`
 /* Title Layer */
 export const MiniTitles = styled.div`
     position: relative;
+    @media(min-width: 768px){
+        margin: 0;
+    }
 `

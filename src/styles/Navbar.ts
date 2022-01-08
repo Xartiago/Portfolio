@@ -7,7 +7,7 @@ export const NavContainer = styled.div`
     z-index: 10;
     height: ${(props: MeDMI) => props.Menu ? '100vh' : 'auto'};
     top: 0px;
-    padding-left: 10px;
+    padding-left: 18px;
     background: ${(props: MeDMI) => props.DM ? Negro : Blanco};
     border-right: ${(props: MeDMI) => props.DM && props.Menu ? `1px solid ${Blanco}` 
     : props.DM === false && props.Menu ? `1px solid ${Negro}`

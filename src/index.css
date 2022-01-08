@@ -32,6 +32,9 @@ code {
     color: #0a748f;
   }
 }
+.i:hover{
+  color: #69bdc4;
+}
 .menuicons{
   padding: 5px;
   margin: 10px 0;

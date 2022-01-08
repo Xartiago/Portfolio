@@ -9,7 +9,7 @@ export interface StysI {
     DM: Boolean;
 }
 /* Menu */
-export interface MenStI{
+export interface MenStI {
     Menu?: Boolean;
 }
 /* Dark Mode and Menu */
@@ -18,7 +18,7 @@ export interface MeDMI {
     Menu: Boolean
 }
 export interface TitlesI {
-    id: number;
+    id: string;
     titleEn: string;
     titleES: string;
     descriptionEn: string;
@@ -50,4 +50,4 @@ interface DarkModeOff {
     payload?: any;
 }
 /* Reducer Actions Types */
-export type ReducerActions = LanguageEn | LanguageEs | DarkModeOn | DarkModeOff ;
+export type ReducerActions = LanguageEn | LanguageEs | DarkModeOn | DarkModeOff;
