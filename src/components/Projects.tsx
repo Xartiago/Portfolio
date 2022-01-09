@@ -32,8 +32,6 @@ export const Projects = () => {
     const clickHandleChange = (value: string) => {
         value !== proyectos ? setProyectos(value) : null
     }
-
-
     return (
         <Container DM={DarkMode} id='Projects'>
             <MiniTitles>

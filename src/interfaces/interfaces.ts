@@ -28,6 +28,16 @@ export interface TitlesI {
     descriptionEs: string;
     year: string;
 }
+export interface ProjectsI {
+    id: string;
+    img?: string;
+    img2?: string;
+    nameEn: string;
+    nameEs: string;
+    technologies: string;
+    type: 'Full-Stack' | 'Front-end' | 'Back-end' | 'Games';
+    in: 'Individual' | 'Grupal'
+}
 /* -- State -- */
 /* Global Portfolio State */
 export interface PortfolioGlobalState {
