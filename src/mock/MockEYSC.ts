@@ -14,8 +14,8 @@ export const StyArr: TitlesI[] = [
         id: '2',
         titleEn: 'Platzi courses',
         titleES: 'Cursos  de Platzi ',
-        descriptionEn: 'I was learning platzi courses, where I managed to have basic knowledge about mobile and web development, in which I launched a mobile application.',
-        descriptionEs: 'Estuve aprendiendo cursos de platzi, donde logre tener conocimientos basicos sobre el desarrollo movil y web, en el cual lanze una aplicacion movil.',
+        descriptionEn: 'I was learning at platzi, where I managed to have basic knowledge about mobile and web development, in which I launched a mobile application.',
+        descriptionEs: 'Estuve aprendiendo en platzi, donde logre tener conocimientos basicos sobre el desarrollo movil y web, en el cual lanze una aplicacion movil.',
         year: '2020-2021'
     },
     {
@@ -23,7 +23,7 @@ export const StyArr: TitlesI[] = [
         titleEn: 'High School',
         titleES: 'Bachillerato',
         descriptionEn: 'I finished high school at the Antonio Nariño school in Yopal Casanare (Colombia) 🇨🇴',
-        descriptionEs: 'acabe el bachillerato en el colegio Antonio Nariño de Yopal Casanare (Colombia) 🇨🇴',
+        descriptionEs: 'Acabe el bachillerato en el colegio Antonio Nariño de Yopal Casanare (Colombia) 🇨🇴',
         year: '2019'
     },
     {

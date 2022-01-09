@@ -158,6 +158,9 @@ export const LangControl = styled.h3`
 /* Title Layer */
 export const MiniTitles = styled.div`
     position: relative;
+    @media(min-width: 450px){
+        margin-left: 20px;
+    }
     @media(min-width: 768px){
         margin: 0;
     }
