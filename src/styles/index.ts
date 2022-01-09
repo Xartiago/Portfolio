@@ -84,9 +84,17 @@ export const Paragraph = styled.p`
     font-size: 16px;
     text-align: center;
     color: ${(props: StysI) => props.DM ? Blanco : Negro};
-
     @media (min-width: 1180px) {
         font-size: 18px;
+    }
+`
+export const Paragraph2 = styled.p`
+    padding: 20px 20px;
+    font-size: 20px;
+    text-align: center;
+    color: ${(props: StysI) => props.DM ? Blanco : Negro};
+    @media (min-width: 1180px) {
+        font-size: 40px;
     }
 `
 /* Main Container */
@@ -102,7 +110,7 @@ export const Container = styled.div`
 export const Container2 = styled.div`
     z-index: -2;
     position: relative;
-    padding: 70px 18px;
+    padding: 70px 18px 20px;
     width: 100%;
     height: 100%;
     background: ${(props: StysI) => props.DM ? Negro : Blanco};
@@ -116,12 +124,12 @@ export const Container2 = styled.div`
 export const Container3 = styled.div`
     z-index: -2;
     position: relative;
-    padding: 40px 18px 0;
+    padding: 40px 18px 5px;
     width: 100%;
     height: 100%;
     background: ${(props: StysI) => props.DM ? Negro : Blanco};
     @media (min-width: 768px) {
-        padding: 40px 60px 40px 120px;
+        padding: 40px 60px 5px 120px;
     }
     @media (min-width: 1180px) {
         font-size: 23px;

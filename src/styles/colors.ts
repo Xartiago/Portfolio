@@ -7,3 +7,5 @@ export const GrisOscuro: string = '#292e35'
 export const GrisClaro: string = '#E4E4E4'
 export const Blanco: string = '#EEEEEE';
 export const Negro: string = '#222831'
+export const Verde: string = '#00b347'
+export const Purpura: string = '#90179c'

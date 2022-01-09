@@ -3,6 +3,7 @@ import { AbsoluteControllers } from './components/AbsoluteControllers'
 import { ExpyStud } from './components/ExpyStud'
 import { Home } from './components/Home'
 import { NavBar } from './components/NavBar'
+import { Projects } from './components/Projects'
 import { Techs } from './components/Techs'
 import { PortfolioProvider } from './context/PortfolioProvider'
 
@@ -15,6 +16,7 @@ export const App = () => {
       <About />
       <ExpyStud />
       <Techs />
+      <Projects />
     </PortfolioProvider>
   )
 }

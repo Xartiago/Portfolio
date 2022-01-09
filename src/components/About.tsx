@@ -2,7 +2,7 @@
 import { useDarkMode } from "../hooks/useDarkMode"
 import { useLanguage } from "../hooks/useLanguage"
 /* Styled Components */
-import { Container2, MiniTitles, Paragraph, Second } from "../styles"
+import { Container2, MiniTitles, Paragraph, Paragraph2, Second } from "../styles"
 import { BrandLogos, Dots, Logotype, Logotype2, PersBrand, Profile, ProfileCont, TextContainer } from "../styles/About"
 
 export const About = () => {
@@ -31,12 +31,12 @@ export const About = () => {
                     <Logotype DM={DarkMode} />
                     <Logotype2 DM={DarkMode} />
                 </BrandLogos>
-                <Paragraph DM={DarkMode}>
+                <Paragraph2 DM={DarkMode}>
                     {Language === 'En' ?
                         <b>"My Personal Brand is an X in the shape of an hourglass"</b>
                         : <b>"Mi Marca Personal es una X con forma de reloj de arena"</b>
                     }
-                </Paragraph>
+                </Paragraph2>
             </PersBrand>
         </Container2>
     )
