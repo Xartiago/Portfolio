@@ -18,8 +18,8 @@ export const AbsoluteControllers = () => {
                         : <FaRegMoon size='25px' color='#222831' className="controler" onClick={DMOn} />
                 }
                 {
-                    Language === 'Es' ? <LangControl DM={DarkMode} onClick={LanEn}>ES</LangControl>
-                        : <LangControl DM={DarkMode} onClick={LanEs}>EN</LangControl>
+                    Language === 'Es' ? <LangControl DM={DarkMode} onClick={LanEn}>EN</LangControl>
+                        : <LangControl DM={DarkMode} onClick={LanEs}>ES</LangControl>
                 }
             </DarkModeController>
         </AbsCont>

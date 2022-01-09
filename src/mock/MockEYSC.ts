@@ -31,7 +31,7 @@ export const StyArr: TitlesI[] = [
     titleEn: 'Assistant Graphic Designer',
     titleES: 'Diseñador Grafico asistente',
     descriptionEn: 'This is a technique of 2 years during high school, I learned adobe programs that are used for graphic design and I had notions of UX / UI.',
-        descriptionEs: 'Esta es una tecnica de 2 años durante el colegio,  aprendi programas de adobe que se usan para el diesño grafico y tuve nociones de UX / UI.',
+        descriptionEs: 'Esta es una tecnica de 2 años durante el colegio,  aprendi programas de adobe que se usan para el diseño grafico y tuve nociones de UX / UI.',
         year: '2017-2019'
     },
 ]
@@ -42,7 +42,7 @@ export const ExpArr: TitlesI[] =[
         titleEn: 'Teaching Assistant - Henry Bootcamp 🇦🇷',
         titleES: 'Profesor Asistente - Henry Bootcamp 🇦🇷',
         descriptionEn: 'As an assistant teacher, I coordinated, assisted bootcamp students, proposed dynamics to make their learning more fun and sometimes explained the topic of the day again.',
-        descriptionEs: 'Como profesor asistente coordine, asisti a alumnos del bootcamp, proponia dinamicas para que su aprendizaje fuera mas divertido y en ocasiones explicaba nuevamente el tema del dia',
+        descriptionEs: 'Como profesor asistente coordine y asisti a alumnos del bootcamp, proponia dinamicas para que su aprendizaje fuera mas divertido y en ocasiones explicaba nuevamente el tema del dia',
         year: '2021'
     }
 ]
