@@ -42,13 +42,13 @@ export const Select = styled.select`
     @media(min-width: 450px){
         width: 60%;
     }
-    @media(min-width: 800px){
+    @media(min-width: 870px){
         display: none;
     }
 `
 export const Inputs = styled.div`
     display: none;
-    @media(min-width: 800px){
+    @media(min-width: 870px){
         display: flex;
         width: 70%;
         justify-content: space-between;
@@ -64,9 +64,6 @@ export const Inputs = styled.div`
         justify-content: space-between;
     }
 `
-export const Input = styled.input`
-    background: ${(props: StysI) => props.DM ? Negro : Blanco};
-`
 export const TypeProC = styled.div`
     display:flex;
 `
@@ -77,6 +74,7 @@ export const TypeProject = styled.div`
 `
 export const Parag1 = styled.p`
     font-size: 16px;
+    cursor: pointer;
     margin-left: 10px;
     color: ${(props: StysI) => props.DM ? Blanco : Negro};
     @media(min-width: 800px){

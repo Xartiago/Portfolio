@@ -6,8 +6,8 @@ import { useLanguage } from "../hooks/useLanguage"
 /* Styled Components */
 import { MiniTitles, Second } from "../styles"
 import { Dots } from "../styles/About"
-import { Container, Input, Inputs, Parag1, Select, SelectC, TypeProC, TypeProject } from "../styles/Projects"
-import { Purpura, Verde } from "../styles/colors"
+import { Container, Inputs, Parag1, Select, SelectC, TypeProC, TypeProject } from "../styles/Projects"
+import { Celeste, Gris, Purpura, Verde } from "../styles/colors"
 import { Parag } from "../styles/ExpyStud"
 /* React Icons */
 import { GoPrimitiveDot } from 'react-icons/go'
@@ -21,10 +21,18 @@ export const Projects = () => {
     const { DarkMode } = useDarkMode()
     /* State´s Component */
     const [proyectos, setProyectos] = useState<string>('All')
+    console.log(proyectos)
+    /* Functionality */
+    /* Select */
     const selectHandleChange = (event: Event) => {
         const { value } = event.target
-        setProyectos(value)
+        value !== proyectos ? setProyectos(value) : null
     }
+    /* onClick */
+    const clickHandleChange = (value: string) => {
+        value !== proyectos ? setProyectos(value) : null
+    }
+
 
     return (
         <Container DM={DarkMode} id='Projects'>
@@ -33,7 +41,7 @@ export const Projects = () => {
                 <Second DM={DarkMode}>{Language === 'En' ? 'Projects' : 'Proyectos'}</Second>
             </MiniTitles>
             <SelectC DM={DarkMode}>
-                <Select DM={DarkMode} name="Project" id="Project">
+                <Select DM={DarkMode} onChange={selectHandleChange} name="Project" id="Project">
                     <option value="All">All</option>
                     <option value="Full-Stack">Full-Stack</option>
                     <option value="Front-end">Front</option>
@@ -41,24 +49,24 @@ export const Projects = () => {
                     <option value="Games">Games</option>
                 </Select>
                 <Inputs>
-                    <TypeProject>
-                        <FaDotCircle size={15} />
+                    <TypeProject onClick={() => clickHandleChange('All')}>
+                        <FaDotCircle size={15} color={proyectos === 'All' ? Celeste : Gris} />
                         <Parag1 DM={DarkMode}>All</Parag1>
                     </TypeProject>
-                    <TypeProject>
-                        <FaDotCircle size={15} />
+                    <TypeProject onClick={() => clickHandleChange('Full-Stack')} >
+                        <FaDotCircle size={15} color={proyectos === 'Full-Stack' ? Celeste : Gris} />
                         <Parag1 DM={DarkMode}>Full-Stack</Parag1>
                     </TypeProject>
-                    <TypeProject>
-                        <FaDotCircle size={15} />
+                    <TypeProject onClick={() => clickHandleChange('Front-end')} >
+                        <FaDotCircle size={15} color={proyectos === 'Front-end' ? Celeste : Gris} />
                         <Parag1 DM={DarkMode}>Front</Parag1>
                     </TypeProject>
-                    <TypeProject>
-                        <FaDotCircle size={15} />
+                    <TypeProject onClick={() => clickHandleChange('Back-end')} >
+                        <FaDotCircle size={15} color={proyectos === 'Back-end' ? Celeste : Gris} />
                         <Parag1 DM={DarkMode}>Back</Parag1>
                     </TypeProject>
-                    <TypeProject>
-                        <FaDotCircle size={15} />
+                    <TypeProject onClick={() => clickHandleChange('Games')} >
+                        <FaDotCircle size={15} color={proyectos === 'Games' ? Celeste : Gris} />
                         <Parag1 DM={DarkMode}>Games</Parag1>
                     </TypeProject>
                 </Inputs>
