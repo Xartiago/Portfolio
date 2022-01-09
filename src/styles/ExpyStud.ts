@@ -66,4 +66,7 @@ export const Parag = styled.p`
     font-size: 16px;
     text-align: justify;
     color: ${(props: StysI) => props.DM ? Blanco : Gris};
+    @media(min-width: 500px){
+        margin-left: 5px;
+    }
 `

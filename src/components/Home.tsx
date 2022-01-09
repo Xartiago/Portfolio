@@ -32,7 +32,7 @@ export const Home = () => {
                         <AiFillGithub size='38' className={`${DarkMode ? 'networks gh' : 'networks ghl'}`} />
                     </a>
                 </Networks>
-                <Down>
+                <Down DM={DarkMode}>
                     <a href='#About' > {DarkMode ? <BsChevronDoubleDown color='white' /> : <BsChevronDoubleDown />} </a>
                 </Down>
             </HomeBackground>

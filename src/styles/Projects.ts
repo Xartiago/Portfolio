@@ -51,6 +51,17 @@ export const Inputs = styled.div`
     @media(min-width: 800px){
         display: flex;
         width: 70%;
+        justify-content: space-between;
+    }
+    @media(min-width: 1000px){
+        display: flex;
+        width: 60%;
+        justify-content: space-between;
+    }
+    @media(min-width: 1400px){
+        display: flex;
+        width: 50%;
+        justify-content: space-between;
     }
 `
 export const Input = styled.input`
@@ -68,4 +79,7 @@ export const Parag1 = styled.p`
     font-size: 16px;
     margin-left: 10px;
     color: ${(props: StysI) => props.DM ? Blanco : Negro};
+    @media(min-width: 800px){
+        font-size: 18px
+    }
 `

@@ -3,6 +3,9 @@
 export interface PortfProvPropsI {
     children: JSX.Element | JSX.Element[];
 }
+/* Event Handler */
+/* Select */
+export type Event = React.ChangeEvent<HTMLSelectElement>
 /* -- Syled components props -- */
 /* Dark mode */
 export interface StysI {
