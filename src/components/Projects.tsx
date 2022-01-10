@@ -83,12 +83,13 @@ export const Projects = () => {
             </SelectC>
             <ContPerProj>
                 {proyectos === 'All' ? ProjArr.map(project => {
-                    const { id, how, nameEn, nameEs, technologies, type, img } = project;
+                    const { id, how, nameEn, nameEs, technologies, img } = project;
                     return <Project
                         key={id}
                         img={img}
                         title={Language === 'En' ? nameEn : nameEs}
                         how={how}
+                        techs={Language === 'En' ? `Technologies: ${technologies}` : `Tecnologias: ${technologies}`}
                     ></Project>
                 })
                     : ProjArr.map(project => {
@@ -98,6 +99,7 @@ export const Projects = () => {
                             img={img}
                             title={Language === 'En' ? nameEn : nameEs}
                             how={how}
+                            techs={Language === 'En' ? `Technologies: ${technologies}` : `Tecnologias: ${technologies}`}
                         ></Project>
 
                     })

@@ -1,5 +1,6 @@
 import styled from "styled-components";
-import { ProjImgI } from "../interfaces/interfaces";
+import { ProjImgI, StysI } from "../interfaces/interfaces";
+import { Blanco, Negro } from "./colors";
 
 /* Project Component */
 export const Container = styled.div`
@@ -20,5 +21,15 @@ export const Img = styled.div`
     background-size: cover;
     @media(min-width: 1440px){
         height: 300px;
+    }
+`
+export const P = styled.p`
+    width: 100%;
+    text-align: center;
+    padding: 10px 20px;
+    font-size: 14px;
+    color: ${(props: StysI) => props.DM ? Blanco : Negro};
+    @media(min-width: 768px){
+        font-size: 16px;
     }
 `

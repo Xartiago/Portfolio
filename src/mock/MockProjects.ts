@@ -17,8 +17,8 @@ export const ProjArr: ProjectsI[] = [
     {
         id: '2',
         img: PG,
-        nameEn: 'Multiserv Dogs PF-Henry',
-        nameEs: 'Multiserv PF-Henry',
+        nameEn: 'Multiserv PF-Henry',
+        nameEs: 'Multiservicios PF-Henry',
         how: "Grupal",
         technologies: 'Html, Css, React, Redux, Tailwind, node,Sexpress, Sequelize, Postgress, Firebase',
         type: "Full-Stack"
@@ -26,7 +26,7 @@ export const ProjArr: ProjectsI[] = [
     {
         id: '3',
         img: Portfolio,
-        nameEn: 'DevPortfolio',
+        nameEn: 'Dev Portfolio',
         nameEs: 'Portafolio',
         how: "Individual",
         technologies: 'Html, Css, React, Redux, Node, Express, Sequelize, Postgress',
