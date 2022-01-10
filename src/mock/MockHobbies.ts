@@ -4,6 +4,7 @@ import LoL from '../assets/images/Ekko.jpg';
 import Gym from '../assets/images/Gym.jpg';
 import Cook from '../assets/images/Food.jpg';
 import Code from '../assets/images/Code.jpg';
+import Drawing from '../assets/images/Drawings.jpg'
 
 export const HobArr: HobbiesI[] = [
     {
@@ -29,5 +30,11 @@ export const HobArr: HobbiesI[] = [
         img: Code,
         descrEn: 'Code',
         descrEs: 'Programar'
+    },
+    {
+        id: '5',
+        img: Drawing,
+        descrEn: 'Draw',
+        descrEs: 'Dibujar'
     }
 ]

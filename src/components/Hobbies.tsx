@@ -19,7 +19,7 @@ export const Hobbies = () => {
                 <Second DM={DarkMode}>{Language === 'En' ? 'Hobbies' : 'Pasatiempos'}</Second>
             </MiniTitles>
             <ContPerHobb>
-                {HobArr.map(hobby => <Hobby key={hobby.id} img={hobby.img} />)}
+                {HobArr.map(hobby => <Hobby key={hobby.id} img={hobby.img} title={Language === 'En' ? hobby.descrEn : hobby.descrEs}/>)}
             </ContPerHobb>
         </Container>
     )

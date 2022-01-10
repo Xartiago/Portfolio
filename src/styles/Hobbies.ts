@@ -14,7 +14,9 @@ export const ContPerHobb = styled.div`
 `
 export const Image = styled.div`
     z-index: 0;
-    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 15px 0;
     border-radius: 30px; 
     width: 100%;
@@ -29,5 +31,18 @@ export const Image = styled.div`
     }
     @media(min-width: 1450px){
         height: 400px;
+    }
+`
+export const HobTitle = styled.h3`
+    font-size: 30px;
+    color: white;
+    @media(min-width: 650px){
+        font-size: 40px;
+    }
+    @media(min-width: 800px){
+        font-size: 50px;
+    }
+    @media(min-width: 1300px){
+        font-size: 60px;
     }
 `

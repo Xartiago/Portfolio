@@ -1,17 +1,15 @@
-import { BsChevronDoubleDown } from "react-icons/bs"
-import { useDarkMode } from "../hooks/useDarkMode"
-import { Down } from "../styles"
-import { Image } from "../styles/Hobbies"
+import { Down } from "../styles";
+import { HobTitle, Image } from "../styles/Hobbies";
 
 interface propsI {
     img: any;
+    title: string;
 }
 
-export const Hobby = ({ img }: propsI) => {
-    const { DarkMode } = useDarkMode()
-
+export const Hobby = ({ img, title }: propsI) => {
     return (
         <Image Img={img} >
+            <HobTitle>{title}</HobTitle>
         </Image>
     )
 }
