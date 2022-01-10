@@ -22,7 +22,7 @@ export const Project = ({ img, title, how, techs }: propsI) => {
                 </SubItalicT>
             </TitleC>
             <Img Img={img} />
-            <P>
+            <P DM={DarkMode}>
                 {techs}
             </P>
         </Container>

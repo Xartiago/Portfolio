@@ -101,7 +101,6 @@ export const Projects = () => {
                             how={how}
                             techs={Language === 'En' ? `Technologies: ${technologies}` : `Tecnologias: ${technologies}`}
                         ></Project>
-
                     })
                 }
             </ContPerProj>

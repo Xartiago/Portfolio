@@ -37,7 +37,7 @@ export const NavBar = () => {
                         <a href="#Experience" onClick={closeMenu}><BiBrain size='40' color={DarkMode ? Blanco : Negro} className='menuicons'  /></a>
                         <a href="#Technologies" onClick={closeMenu}><VscTools size='36' color={DarkMode ? Blanco : Negro} className='menuicons'  /></a>
                         <a href="#Projects" onClick={closeMenu}><IoIosList size='35' color={DarkMode ? Blanco : Negro} className='menuicons'  /></a>
-                        <a href="#Hoobies" onClick={closeMenu}><MdOutlineGames size='35' color={DarkMode ? Blanco : Negro} className='menuicons'  /></a>
+                        <a href="#Hobbies" onClick={closeMenu}><MdOutlineGames size='35' color={DarkMode ? Blanco : Negro} className='menuicons'  /></a>
                         <a href="#Contact" onClick={closeMenu}><MdOutlineConnectWithoutContact size='35' color={DarkMode ? Blanco : Negro} className='menuicons'  /></a>
                         <MenuControllersContainer DM={DarkMode}>
                             {
@@ -60,7 +60,7 @@ export const NavBar = () => {
                 <a href="#Experience" onClick={closeMenu}><BiBrain size='45' color={DarkMode ? Blanco : Negro} className='menuicons'  /></a>
                 <a href="#Technologies" onClick={closeMenu}><VscTools size='40' color={DarkMode ? Blanco : Negro} className='menuicons'  /></a>
                 <a href="#Projects" onClick={closeMenu}><IoIosList size='38' color={DarkMode ? Blanco : Negro} className='menuicons'  /></a>
-                <a href="#Hoobies" onClick={closeMenu}><MdOutlineGames size='40' color={DarkMode ? Blanco : Negro} className='menuicons'  /></a>
+                <a href="#Hobbies" onClick={closeMenu}><MdOutlineGames size='40' color={DarkMode ? Blanco : Negro} className='menuicons'  /></a>
                 <a href="#Contact" onClick={closeMenu}><MdOutlineConnectWithoutContact size='40' color={DarkMode ? Blanco : Negro} className='menuicons'  /></a>
             </MenuContainer>
         </NavContainer>
