@@ -9,8 +9,6 @@ export const Hobby = ({ img }: propsI) => {
     const { DarkMode } = useDarkMode()
 
     return (
-        <div>
-            <Img Img={img} />
-        </div>
+        <Img Img={img} />
     )
 }

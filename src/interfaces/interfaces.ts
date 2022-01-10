@@ -41,6 +41,12 @@ export interface ProjectsI {
     type: 'Full-Stack' | 'Front-end' | 'Back-end' | 'Games';
     how: 'Individual' | 'Grupal'
 }
+export interface HobbiesI {
+    id: string;
+    img: string;
+    descrEn: string;
+    descrEs: string;
+}
 /* -- State -- */
 /* Global Portfolio State */
 export interface PortfolioGlobalState {
