@@ -9,25 +9,25 @@ export const HobArr: HobbiesI[] = [
     {
         id: '1',
         img: LoL,
-        descrEn: '',
-        descrEs: ''
+        descrEn: 'Video Games',
+        descrEs: 'Videojuegos'
     },
     {
         id: '2',
         img: Gym,
-        descrEn: '',
-        descrEs: ''
+        descrEn: 'Gym',
+        descrEs: 'Gimnasio'
     },
     {
         id: '3',
         img: Cook,
-        descrEn: '',
-        descrEs: ''
+        descrEn: 'Cook',
+        descrEs: 'Cocinar'
     },
     {
         id: '4',
         img: Code,
-        descrEn: '',
-        descrEs: ''
+        descrEn: 'Code',
+        descrEs: 'Programar'
     }
 ]

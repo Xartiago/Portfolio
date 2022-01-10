@@ -1,5 +1,7 @@
+import { BsChevronDoubleDown } from "react-icons/bs"
 import { useDarkMode } from "../hooks/useDarkMode"
-import { Img } from "../styles/Project"
+import { Down } from "../styles"
+import { Image } from "../styles/Hobbies"
 
 interface propsI {
     img: any;
@@ -9,6 +11,7 @@ export const Hobby = ({ img }: propsI) => {
     const { DarkMode } = useDarkMode()
 
     return (
-        <Img Img={img} />
+        <Image Img={img} >
+        </Image>
     )
 }
