@@ -6,13 +6,15 @@ import { useLanguage } from "../hooks/useLanguage"
 /* Styled Components */
 import { MiniTitles, Second } from "../styles"
 import { Dots } from "../styles/About"
-import { Container, Inputs, Parag1, Select, SelectC, TypeProC, TypeProject } from "../styles/Projects"
+import { Container, ContPerProj, Inputs, Parag1, Select, SelectC, TypeProC, TypeProject } from "../styles/Projects"
 import { Celeste, Gris, Purpura, Verde } from "../styles/colors"
 import { Parag } from "../styles/ExpyStud"
 /* React Icons */
 import { GoPrimitiveDot } from 'react-icons/go'
 import { FaDotCircle } from 'react-icons/fa'
 import { Event } from "../interfaces/interfaces"
+import { ProjArr } from "../mock/MockProjects"
+import { Project } from "./Project"
 
 
 export const Projects = () => {
@@ -79,6 +81,28 @@ export const Projects = () => {
                     </TypeProject>
                 </TypeProC>
             </SelectC>
+            <ContPerProj>
+                {proyectos === 'All' ? ProjArr.map(project => {
+                    const { id, how, nameEn, nameEs, technologies, type, img } = project;
+                    return <Project
+                        key={id}
+                        img={img}
+                        title={Language === 'En' ? nameEn : nameEs}
+                        how={how}
+                    ></Project>
+                })
+                    : ProjArr.map(project => {
+                        const { id, how, nameEn, nameEs, technologies, type, img } = project
+                        if (type === proyectos) return <Project
+                            key={id}
+                            img={img}
+                            title={Language === 'En' ? nameEn : nameEs}
+                            how={how}
+                        ></Project>
+
+                    })
+                }
+            </ContPerProj>
         </Container>
     )
 }

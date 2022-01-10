@@ -20,6 +20,9 @@ export interface MeDMI {
     DM: Boolean;
     Menu: Boolean
 }
+export interface ProjImgI {
+    Img?: string;
+}
 export interface TitlesI {
     id: string;
     titleEn: string;
@@ -36,7 +39,7 @@ export interface ProjectsI {
     nameEs: string;
     technologies: string;
     type: 'Full-Stack' | 'Front-end' | 'Back-end' | 'Games';
-    in: 'Individual' | 'Grupal'
+    how: 'Individual' | 'Grupal'
 }
 /* -- State -- */
 /* Global Portfolio State */

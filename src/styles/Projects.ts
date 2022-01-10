@@ -81,3 +81,17 @@ export const Parag1 = styled.p`
         font-size: 18px
     }
 `
+export const ContPerProj = styled.div`
+    margin-bottom: 30px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 10px;
+    justify-content: center;
+    @media(min-width: 750px){
+        grid-template-columns: repeat(2, 1fr);
+    }
+    @media(min-width: 1440px){
+        grid-template-columns: repeat(3, 1fr);
+    }
+`
