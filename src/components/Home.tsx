@@ -6,8 +6,13 @@ import { HomeBackground, Mark, Networks } from '../styles/Home';
 /* React Icons */
 import { BsChevronDoubleDown } from 'react-icons/bs';
 import { AiFillYoutube, AiFillInstagram, AiFillLinkedin, AiFillGithub } from "react-icons/ai";
+import { init } from '@emailjs/browser';
 
-
+const emailIntegration = () =>{
+    console.log('Confirmación')
+    return init('user_qoKnDCrv4rbO6QNRbvYV8')
+}
+emailIntegration()
 
 export const Home = () => {
     const { DarkMode } = useDarkMode()

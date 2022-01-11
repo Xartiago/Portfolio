@@ -11,7 +11,7 @@ export const ProjArr: ProjectsI[] = [
         nameEn: 'Dogs PI-Henry',
         nameEs: 'Dogs PI-Henry',
         how: "Individual",
-        technologies: 'Html, Css, React, Redux, Node, Express, Sequelize, Postgress',
+        technologies: 'Html, Css, React, JS, Redux, Node, Express, Sequelize, Postgress',
         type: "Full-Stack"
     },
     {
@@ -20,7 +20,7 @@ export const ProjArr: ProjectsI[] = [
         nameEn: 'Multiserv PF-Henry',
         nameEs: 'Multiservicios PF-Henry',
         how: "Grupal",
-        technologies: 'Html, Css, React, Redux, Tailwind, node,Sexpress, Sequelize, Postgress, Firebase',
+        technologies: 'Html, Css, React, JS, Redux, Tailwind, node,Sexpress, Sequelize, Postgress, Firebase',
         type: "Full-Stack"
     },
     {
@@ -29,7 +29,7 @@ export const ProjArr: ProjectsI[] = [
         nameEn: 'Dev Portfolio',
         nameEs: 'Portafolio',
         how: "Individual",
-        technologies: 'Html, Css, React, Redux, Node, Express, Sequelize, Postgress',
+        technologies: 'Html, Styled Components, React, TS, Redux, Node, Express, Sequelize, Postgress',
         type: "Front-end"
     },
 ]

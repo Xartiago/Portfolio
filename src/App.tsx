@@ -1,5 +1,6 @@
 import { About } from './components/About'
 import { AbsoluteControllers } from './components/AbsoluteControllers'
+import { Contact } from './components/Contact'
 import { ExpyStud } from './components/ExpyStud'
 import { Hobbies } from './components/Hobbies'
 import { Home } from './components/Home'
@@ -19,6 +20,7 @@ export const App = () => {
       <Techs />
       <Projects />
       <Hobbies />
+      <Contact />
     </PortfolioProvider>
   )
 }

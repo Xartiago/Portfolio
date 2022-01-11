@@ -22,7 +22,13 @@ export const Image = styled.div`
     width: 100%;
     height: 200px;
     background: url(${(props: ProjImgI) => props.Img && props.Img}) no-repeat center;
+    opacity: 0.6;
     background-size: cover;
+    &:hover{
+        opacity: 1;
+        transition: 0.5s;
+        transform: scale(1.01);
+    }
     @media(min-width: 650px){
         height: 300px;
     }
