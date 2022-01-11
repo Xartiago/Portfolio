@@ -9,3 +9,4 @@ export const Blanco: string = '#EEEEEE';
 export const Negro: string = '#222831'
 export const Verde: string = '#77dd77'
 export const Purpura: string = '#ff7514'
+export const Rojo: string = '#c23b22'

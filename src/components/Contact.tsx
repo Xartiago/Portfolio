@@ -59,13 +59,13 @@ export const Contact = () => {
                     </Label>
                     <Label DM={DarkMode}>
                         Message
-                        <Input2 DM={DarkMode}
+                        <Input2 
                             id="message"
                             {...register('message')}
                             placeholder="Message"
                         />
                     </Label>
-                    <ButtonSubmit>Enviar</ButtonSubmit>
+                    <ButtonSubmit s={success}>{success === null ? 'Enviar' : success === true ? 'Correo enviado exitosamente' : 'Ha ocurrido un error en el envio...'}</ButtonSubmit>
                 </Form>
             </FormCont>
         </Container>
