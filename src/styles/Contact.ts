@@ -28,7 +28,7 @@ export const Input = styled.input`
     padding: 5px 10px;
     font-size: 14px;
     background: #fff;
-    color: ${(props: Errors) => props.e === false ? Rojo : Negro};
+    color: ${Negro};
     font-weight: bold;
     border: none;
     font-family: 'Poppins';
@@ -38,7 +38,7 @@ export const Input2 = styled.textarea`
     padding: 5px 10px;
     margin: 10px 0;
     height: 150px;
-    color: ${(props: Errors) => props.e === false ? Rojo : Negro};
+    color: ${Negro};
     background: #fff
     border: none;
     font-family: 'Poppins';
@@ -57,4 +57,8 @@ export const ButtonSubmit = styled.button`
     border-radius: 10px;
     border: none;
     cursor: ${(props: success) => props.s === null ? 'pointer' : 'not-allowed'};
+`
+export const Errors = styled.span`
+    font-size: 13px;
+    color: ${Rojo};
 `

@@ -4,7 +4,7 @@ import { useLanguage } from "../hooks/useLanguage"
 /* Styled Components */
 import { MiniTitles, Second } from "../styles"
 import { Dots } from "../styles/About"
-import { ButtonSubmit, Form, FormCont, Input, Input2, Label } from "../styles/Contact"
+import { ButtonSubmit, Errors, Form, FormCont, Input, Input2, Label } from "../styles/Contact"
 import { Container } from "../styles/Projects"
 /* React hook form */
 import { useForm } from "react-hook-form"
@@ -31,9 +31,9 @@ export const Contact = () => {
     const [mailE, setMail] = useState<boolean | null>(null);
     const [messageE, setMessage] = useState<boolean | null>(null)
 
-    const submit = (data: Mail) => {
+    const submit = async (data: Mail) => {
         const { name, email, message } = data
-        nameE && mailE && messageE && send('service_jdwbubu', 'template_ur0wks2', data).then(d => setSuccess(true)).catch(d => setSuccess(false))
+        if (name !== '' && MAILMODEL.test(email) && message !== '') send('service_jdwbubu', 'template_ur0wks2', data).then(d => setSuccess(true)).catch(d => setSuccess(false))
         name !== '' ? setName(true) : setName(false)
         MAILMODEL.test(email) ? setMail(true) : setMail(false)
         message !== '' ? setMessage(true) : setMessage(false)
@@ -48,29 +48,32 @@ export const Contact = () => {
             <FormCont DM={DarkMode}>
                 <Form onSubmit={handleSubmit(submit)}>
                     <Label DM={DarkMode}>
-                        Name
-                        <Input e={nameE}
+                        {Language === 'En' ? 'Name' : 'Nombre'}
+                        {!nameE && <Errors>Ingresa un nombre</Errors>}
+                        <Input
                             type='text'
                             id='name'
                             {...register('name')}
-                            placeholder={nameE === null ? 'Name' : nameE === false ? 'Ingresa un Nombre' : ''}
+                            placeholder={Language === 'En' ? 'Name' : 'Nombre'}
                         />
                     </Label>
                     <Label DM={DarkMode}>
                         E-mail
-                        <Input e={mailE}
+                        {!mailE && <Errors>Ingresa un Correo electronico valido</Errors>}
+                        <Input
                             type='email'
                             id="email"
                             {...register('email')}
-                            placeholder={mailE === null ? 'E-mail' : mailE === false ? 'Ingresa un E-mail/E-mail invalido' : ''}
+                            placeholder='Email'
                         />
                     </Label>
                     <Label DM={DarkMode}>
-                        Message
-                        <Input2 e={messageE}
+                        {Language === 'En' ? 'Message' : 'Mensaje'}
+                        {!mailE && <Errors>Ingresa un Mensaje</Errors>}
+                        <Input2
                             id="message"
                             {...register('message')}
-                            placeholder={messageE === null ? 'Message' : messageE === false ? 'Ingresa un mensaje' : ''}
+                            placeholder={Language === 'En' ? 'Message' : 'Mensaje'}
                         />
                     </Label>
                     <ButtonSubmit s={success}>{success === null ? 'Enviar' : success === true ? 'Correo enviado exitosamente' : 'Ha ocurrido un error en el envio...'}</ButtonSubmit>

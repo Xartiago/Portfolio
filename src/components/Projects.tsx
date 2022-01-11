@@ -23,7 +23,6 @@ export const Projects = () => {
     const { DarkMode } = useDarkMode()
     /* State´s Component */
     const [proyectos, setProyectos] = useState<string>('All')
-    console.log(proyectos)
     /* Functionality */
     /* Select */
     const selectHandleChange = (event: Event) => {
