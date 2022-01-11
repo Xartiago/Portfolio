@@ -20,8 +20,8 @@ export const About = () => {
                 <TextContainer DM={DarkMode}>
                     <Paragraph DM={DarkMode}>
                         {Language === 'En' ?
-                            'My name is Santiago Salcedo Camacho, I am a young man from Yopal / Casanare (Colombia) passionate about technology and its various fields, currently in which I perform best is developing software for webs; I am constantly learning new technologies / libraries and exploring information related to it, in the same way I like to teach what I know, and collaborate in the development of team projects!'
-                            : 'Mi nombre es Santiago Salcedo Camacho, soy un joven de Yopal/Casanare (Colombia) apasionado por la tecnologia y sus diversos campos, actualmente en el cual me desempeño mejor es desarrollando software para webs; constantemente me encuentro aprendiendo nuevas tecnologias/librerias y explorando informacion relacionada con este, de la misma forma me agrada enseñar lo que se, y colaborar en el desarrollo de proyectos en equipo!'
+                            'My name is Santiago Salcedo Camacho, I am a young man from Yopal / Casanare (Colombia) passionate about technology and its various fields, currently I perform best developing software for webs; I am constantly learning new technologies / libraries and exploring information related, in the same way I like to teach what I know, and collaborate in the development of team projects!'
+                            : 'Mi nombre es Santiago Salcedo Camacho, soy un joven de Yopal/Casanare (Colombia) apasionado por la tecnologia y sus diversos campos, actualmente me desempeño mejor desarrollando software para webs; constantemente me encuentro aprendiendo nuevas tecnologias/librerias y explorando informacion relacionada. De la misma forma me agrada enseñar lo que se, y colaborar en el desarrollo de proyectos en equipo!'
                         }
                     </Paragraph>
                 </TextContainer>
