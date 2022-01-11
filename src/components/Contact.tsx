@@ -34,8 +34,10 @@ export const Contact = () => {
 
     const submit = async (data: Mail) => {
         const { name, email, message } = data
-        setLoading(true)
-        if (name !== '' && MAILMODEL.test(email) && message !== '') send('service_jdwbubu', 'template_ur0wks2', data).then(d => { setSuccess(true); setLoading(false) }).catch(d => { setSuccess(false); setLoading(false) })
+        if (name !== '' && MAILMODEL.test(email) && message !== '') {
+            setLoading(true)
+            send('service_jdwbubu', 'template_ur0wks2', data).then(d => { setSuccess(true); setLoading(false) }).catch(d => { setSuccess(false); setLoading(false) })
+        }
         name !== '' ? setName(true) : setName(false)
         MAILMODEL.test(email) ? setMail(true) : setMail(false)
         message !== '' ? setMessage(true) : setMessage(false)
