@@ -18,13 +18,17 @@ export const Label = styled.label`
     flex-direction: column;
     color: ${(props: StysI) => props.DM ? Blanco : Negro};
     font-size: 20px;
+    font-weight: bold;
 `
+interface Errors{
+    e: null | boolean
+}
 export const Input = styled.input`
     margin: 10px 0;    
     padding: 5px 10px;
     font-size: 14px;
     background: #fff;
-    color: #000;
+    color: ${(props: Errors) => props.e === false ? Rojo : Negro};
     font-weight: bold;
     border: none;
     font-family: 'Poppins';
@@ -34,6 +38,7 @@ export const Input2 = styled.textarea`
     padding: 5px 10px;
     margin: 10px 0;
     height: 150px;
+    color: ${(props: Errors) => props.e === false ? Rojo : Negro};
     background: #fff
     border: none;
     font-family: 'Poppins';
