@@ -6,7 +6,7 @@ import { Dots } from "../styles/About"
 import { Container3, MiniTitles, Second } from "../styles"
 import { GridContainer } from "../styles/Techs"
 /* React Icons */
-import { SiHtml5, SiCss3, SiTailwindcss, SiJavascript, SiTypescript, SiReact, SiRedux, SiExpress, SiMongodb, SiPostgresql, SiSequelize, SiFirebase } from 'react-icons/si'
+import { SiHtml5, SiCss3, SiTailwindcss, SiJavascript, SiTypescript, SiReact, SiRedux, SiExpress, SiMongodb, SiPostgresql, SiSequelize, SiFirebase, SiPrisma } from 'react-icons/si'
 import { IoLogoNodejs } from 'react-icons/io'
 /* Colors */
 import { AzulOscuro, Celeste } from "../styles/colors"
@@ -34,6 +34,7 @@ export const Techs = () => {
                 <SiMongodb size='85' color={DarkMode ? Celeste : AzulOscuro} />
                 <SiPostgresql size='85' color={DarkMode ? Celeste : AzulOscuro} />
                 <SiFirebase size='85' color={DarkMode ? Celeste : AzulOscuro} />
+                <SiPrisma size='85' color={DarkMode ? Celeste : AzulOscuro} />
             </GridContainer>
         </Container3>
     )
