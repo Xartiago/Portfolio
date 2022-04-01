@@ -44,5 +44,13 @@ export const ExpArr: TitlesI[] =[
         descriptionEn: 'As an assistant teacher, I coordinated, assisted bootcamp students, proposed dynamics to make their learning more fun and sometimes explained the topic of the day again.',
         descriptionEs: 'Como profesor asistente coordine y asisti a alumnos del bootcamp, proponia dinamicas para que su aprendizaje fuera mas divertido y en ocasiones explicaba nuevamente el tema del dia',
         year: '2021'
+    },
+    {
+        id: '2',
+        titleEn: 'Trueqin Web App - Fundacion Cre@ccion 🇨🇴',
+        titleES: 'Trueqin Web App - Fundacion Cre@ccion 🇨🇴',
+        descriptionEn: 'As a member of the cre@ccion foundation, I developed the web application that provides the points of a store with the purpose of recycling and focusing on solid waste.',
+        descriptionEs: 'Como miembro de la fundacion cre@ccion, desarrolle la aplicación web que proporciona los puntos de una tienda con finalidad de reciclaje y enfoque a residuos solidos.',
+        year: '2022'
     }
 ]
