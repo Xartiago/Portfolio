@@ -4,6 +4,7 @@ import Dogs from '../assets/images/Dogs.png'
 import Portfolio from '../assets/images/Portfolio.png'
 import PG from '../assets/images/PG.png'
 import Trueqin from '../assets/images/Trueqin.png'
+import web from '../assets/images/web.png'
 
 export const ProjArr: ProjectsI[] = [
     {
@@ -44,7 +45,7 @@ export const ProjArr: ProjectsI[] = [
     },
     {
         id: '5',
-        img: TrueqinRM,
+        img: web,
         nameEn: 'Trueq-in Web App',
         nameEs: 'Trueq-in Web App',
         how: "Individual",
