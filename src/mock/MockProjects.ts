@@ -4,6 +4,7 @@ import Dogs from '../assets/images/Dogs.png'
 import Portfolio from '../assets/images/Portfolio.png'
 import PG from '../assets/images/PG.png'
 import Trueqin from '../assets/images/Trueqin.png'
+import TrueqinRM from '../assets/images/TrueqinRM.png'
 
 export const ProjArr: ProjectsI[] = [
     {
@@ -21,7 +22,7 @@ export const ProjArr: ProjectsI[] = [
         nameEn: 'Multiserv PF-Henry',
         nameEs: 'Multiservicios PF-Henry',
         how: "Grupal",
-        technologies: 'Html, Css, React, JS, Redux, Tailwind, node,Sexpress, Sequelize, Postgress, Firebase',
+        technologies: 'Html, Css, React, JS, Redux, Tailwind, node, express, Sequelize, Postgress, Firebase',
         type: "Full-Stack"
     },
     {
@@ -40,6 +41,15 @@ export const ProjArr: ProjectsI[] = [
         nameEs: 'Trueq-in Android App',
         how: "Individual",
         technologies: 'Kotlin, Android Studio, Firebase, Css',
+        type: "Front-end"
+    },
+    {
+        id: '5',
+        img: TrueqinRM,
+        nameEn: 'Trueq-in Web App',
+        nameEs: 'Trueq-in Web App',
+        how: "Individual",
+        technologies: 'React, Node, express, prisma, TS, Tailwind, Postgress, SupaBase,',
         type: "Front-end"
     }
 ]
