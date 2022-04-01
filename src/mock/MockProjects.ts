@@ -4,7 +4,6 @@ import Dogs from '../assets/images/Dogs.png'
 import Portfolio from '../assets/images/Portfolio.png'
 import PG from '../assets/images/PG.png'
 import Trueqin from '../assets/images/Trueqin.png'
-import TrueqinRM from '../assets/images/trueqinrm.png'
 
 export const ProjArr: ProjectsI[] = [
     {
