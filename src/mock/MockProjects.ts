@@ -49,7 +49,7 @@ export const ProjArr: ProjectsI[] = [
         nameEn: 'Trueq-in Web App',
         nameEs: 'Trueq-in Web App',
         how: "Individual",
-        technologies: 'React, Node, express, prisma, TS, Tailwind, Postgress, SupaBase,',
+        technologies: 'React, Node, express, prisma, TS, Tailwind, Postgress, SupaBase, easy peasy v5, Html, Css',
         type: "Front-end"
     }
 ]
